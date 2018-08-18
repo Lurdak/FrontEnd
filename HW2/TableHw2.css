@@ -1,0 +1,42 @@
+#firstTable{
+    background-color: #C1F6FE;
+    border-collapse: collapse;
+ 
+  margin: 5px;
+ 
+    float: left;
+}
+#firstTable td {
+    border: 1px red solid;
+    width: 5px;
+    height: 5px;
+    font-size: 5px;
+    color: red;
+}
+#secondTable{
+    margin: 5px;
+    background-color: gray;
+    border-collapse: collapse;
+    float: left;
+}
+#secondTable td {
+    border: 1px blue dotted;
+    color: darkgrey;
+}
+#thirdTable{
+    margin: 5px;
+    border-collapse: collapse;
+    float: left;
+    padding: 0px;
+}
+#thirdTable td {
+    border: 1px blue groove ;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+}
+.imgStyle{
+    width: 100%;
+    height:100%;
+
+}
