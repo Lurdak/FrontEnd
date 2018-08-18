@@ -1,0 +1,62 @@
+#help{
+    background-color:red;
+    
+    
+}
+body{
+    font-size: 18px;
+ 
+}
+
+#colorP1{
+    color: red;
+}
+
+#colorP2{
+    color: rgb(255,255,200);
+}
+
+#colorP3{
+    text-transform: capitalize;
+    color:green;
+}
+
+#colorP4{
+    color: blue;
+}
+
+#colorP5{
+    color: blueviolet;
+}
+.underLinewithCap
+{
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+.spaceBeforeP 
+{
+    text-align: left;
+    text-indent: 20px;
+}
+
+.wordSpacingInP
+{
+    text-align: left;
+    word-spacing: 2 px;}
+.charSpacingInP{
+    letter-spacing: 1px;
+
+}
+#header{
+    text-align: center;
+    color : red;
+    text-shadow : 10px 10px green;
+} 
+.pLine{
+    
+        line-height: 1.5;
+    
+}
