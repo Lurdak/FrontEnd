@@ -1,4 +1,5 @@
-# FrontEnd-HW2
+# FrontEnd
+
 Home Work for FrontEnd course at SVcollege!
 HTML CSS JS
 built on Visual Code
