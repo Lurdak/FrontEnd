@@ -1,0 +1,17 @@
+.hidePragraph{
+    display: none;
+}
+.divStyle{
+    width: 40%;
+    float:left;
+ 
+}
+.btnStyle{
+    display: block;
+    float: left;
+}
+#checkLongestFirst{
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+}
