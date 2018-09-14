@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="zap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+
+    </head>
+    <body>
+
+        <div class="searchEngine">    
+            <div  class="searchInfo1">
+                <input type="number" min="800" max="6000" id="engineSize"> <label> נפח מנוע </label>
+                <input type="text" minlength="2"id="type"> <label> דגם </label>
+                <input type="text"  minlength="2" id="comp"> <label> חברה </label>
+            </div>
+            <div  class="searchInfo">
+                    
+                <label> רשימת צבעים </label>
+                    <br>
+                <label class="radio-inline"> אדום <input type="radio" name="color"  value="אדום"   checked onclick="carColor(this.value)"></label>
+                
+                <label class="radio-inline"> כחול <input type="radio" name="color"  value="כחול" onclick="carColor(this.value)"></label>
+                
+                <label class="radio-inline"> ירוק <input type="radio" name="color"  value="ירוק" onclick="carColor(this.value)"></label>
+                
+                <label class="radio-inline"> צהוב <input type="radio" name="color"  value="צהוב" onclick="carColor(this.value)"></label>
+                <br>
+            </div>
+            <div  class="searchInfo">
+                <label>מספר כסאות</label>
+                <br>
+                
+                <select id="seatNumber">
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div class="searchBTn">
+                <button onclick="getCarInfo()">Search</button>
+            </div>
+
+         </div>
+         <div id="carSeleceted">
+             <div id="carInfoDisplay" class="carinfoDis">
+
+             </div>
+             <img class="imgStyle" id="carImg">
+
+
+
+         </div>
+            <script type="text/javascript" src="zap.js" ></script>
+    </body>
+    
+</html>
