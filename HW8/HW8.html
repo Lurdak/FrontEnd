@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="HW8.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+
+    </head>
+    <body>
+        <input id="answerFromRandom" type="text"></input>
+        <button onclick="randomA()">A</button>
+        <button onclick="flipB()">B</button>
+        <br>
+        <br>
+        <div id="calc">
+                <div id="answer" class="clacAnswer">
+                
+                <input  class="calcanswer" type="text" id="finalAnswer" />
+                <br>
+                </div>
+                <br>
+                
+                <input class="clacBtn" type="button" value=" 1 " onclick="enterNumber('1')" />
+                <input class="clacBtn" type="button" value=" 2 " onclick="enterNumber('2')" />
+                <input class="clacBtn" type="button" value=" 3 " onclick="enterNumber('3')" />
+                <input class="clacBtn" type="button" value=" + " onclick="calculator(this.value)" />
+                <br/>
+                
+                <input class="clacBtn" type="button" value=" 4 " onclick="enterNumber('4')" />
+                <input class="clacBtn" type="button" value=" 5 " onclick="enterNumber('5')" />
+                <input class="clacBtn" type="button" value=" 6 " onclick="enterNumber('6')" />
+                <input class="clacBtn" type="button" value=" - " onclick="calculator(this.value)" />
+                </br>
+              
+                <input class="clacBtn" type="button" value=" 7 " onclick="enterNumber('7')" />
+                <input class="clacBtn" type="button" value=" 8 " onclick="enterNumber('8')" />
+                <input class="clacBtn" type="button" value=" 9 " onclick="enterNumber('9')" />
+                <input class="clacBtn" type="button" value=" X " onclick="calculator(this.value)" />
+                </br>
+            
+                <input class="clacBtn" type="button" value=" c " onclick="restCalc()" />
+                <input class="clacBtn" type="button" value=" 0 " onclick="enterNumber('0')" />
+                <input class="clacBtn" type="button" value=" = " onclick="calculator(this.value);requestAnswer()" />
+                <input class="clacBtn" type="button" value=" / " onclick="calculator(this.value)" />
+                </br>
+                <br>
+
+        </div>
+        <script type="text/javascript" src="HW8.js" ></script>
+    </body>
+</html>
+    
