@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="HW9.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+
+    </head>
+    <body>
+        <h6> Create array for N number</h6><br>
+        <input id="selectN" type="text"></input><br>
+        <h6> the Most Shown Number in the array  1-9  is </h6><br>
+        <label id="mostShownNumber">    </label><br>
+        <button onclick="countNumber(selectN.value)">Do the Job</button>
+        
+        <br>
+        <br>
+        <div id="calc">
+                <div id="answer" class="clacAnswer">
+                
+                <input  class="calcanswer" type="text" id="finalAnswer" />
+                <br>
+                </div>
+                <br>
+                
+                <input class="clacBtn" type="button" value=" 1 " onclick="enterNumber('1')" />
+                <input class="clacBtn" type="button" value=" 2 " onclick="enterNumber('2')" />
+                <input class="clacBtn" type="button" value=" 3 " onclick="enterNumber('3')" />
+                <input class="clacBtn" type="button" value=" + " onclick="calculator(this.value)" />
+                <br/>
+                
+                <input class="clacBtn" type="button" value=" 4 " onclick="enterNumber('4')" />
+                <input class="clacBtn" type="button" value=" 5 " onclick="enterNumber('5')" />
+                <input class="clacBtn" type="button" value=" 6 " onclick="enterNumber('6')" />
+                <input class="clacBtn" type="button" value=" - " onclick="calculator(this.value)" />
+                </br>
+              
+                <input class="clacBtn" type="button" value=" 7 " onclick="enterNumber('7')" />
+                <input class="clacBtn" type="button" value=" 8 " onclick="enterNumber('8')" />
+                <input class="clacBtn" type="button" value=" 9 " onclick="enterNumber('9')" />
+                <input class="clacBtn" type="button" value=" X " onclick="calculator(this.value)" />
+                </br>
+            
+                <input class="clacBtn" type="button" value=" c " onclick="restCalc()" />
+                <input class="clacBtn" type="button" value=" 0 " onclick="enterNumber('0')" />
+                <input class="clacBtn" type="button" value=" = " onclick="calculator(this.value);requestAnswer()" />
+                <input class="clacBtn" type="button" value=" / " onclick="calculator(this.value)" />
+                </br>
+                <br>
+
+        </div>
+        <input class="clacBtn" type="button" onclick="showAllCallOp()" value="get All calculaor op" ></input>
+        <div id="allCallOp">
+        </div>
+        <br>
+        <br>
+
+        <h6>2 Arrays with  random Numbers</h6><br>
+        <h6>Array 1</h6><br>
+        <div id="arr1"></div><br>
+        <h6>Array 2 with Answer</h6><br>
+        <div id="arr2"></div><br>
+
+        <br>
+        <br>
+        <div class="cube" onclick="stopRandom()">
+            <h1 id="numberInCube"></h1>
+        </div>
+        <div class="cube" onclick="stopRandom()">
+                <h1 id="numberInCube2"></h1>
+            
+    
+        </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <input type="button" onclick="startRandom()" value="start Random"></input>
+        <input type="button" onclick="stopRandom()" value="Stop random"></input>
+   
+        
+
+           
+        <script type="text/javascript" src="HW9.js" ></script>
+    </body>
+
+</html>
+    

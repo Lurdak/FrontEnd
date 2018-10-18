@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="HW10.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+
+    </head>
+    <body>
+        <input type="text" id="matrixRows" placeholder="Row Number"></input>
+        <input type="text" id="matrixColumns"placeholder="Columns Number"></input>
+        <input type="text" id="minValue" placeholder="min Value"></input>
+        <input type="text" id="MaxValue" placeholder="max Value"></input>
+        <button onclick="createMatrixFromInput()">Create Matrix</button>
+        <div class="table-responsive-sm">
+                <table id="matrix" class="table table-bordered table-dark">
+
+                </table>
+        </div>
+        <h3>the average of the matrix is : <span id="avgAnswer"></span> </h3>
+        <input type="text" id="getCountNumber">
+        <button onclick="onClickCountNum()">Count</button>
+        <h3 id="countNum"></h3>
+        <br>
+        <h3>The Row with Biggest Sum is : <span id="maxRow"></span> </h3>
+        <h3>The half top is Positive : <span id="PosHalfTop"></span> </h3>
+        
+       
+        <BR>
+        <h3>sorted Matrix</h3>
+        <div class="table-responsive-sm">
+                <table id="sortedMatrix" class="table table-bordered table-dark">
+
+                </table>
+        </div>
+        <script type="text/javascript" src="HW10.js" ></script>
+    </body>
+    
+</html>
