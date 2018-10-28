@@ -9,25 +9,44 @@
 
     </head>
     <body>
-        <center><div id="box">
+        <center>
+            <div id="box">
            
                     <table id="matrix" class="table-bordered">
     
                     </table>
              
-        </div>
+            </div>
+            
+            <div id="resultWindow" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="result-content">
+                        <p id="resultIs"></p>
+                        <br>
+                        <span>
+                            <input type="button" value="Replay" onclick="refreshGame()"/>
+                            <input type="button" value="Go Back" onclick="returnToLoginPage()"/>
+                        </span>
+
+                    </div>
+                    
+            </div>
+
+            
         </center>
         <br>
         <br>
         <center><div id="box">
            
-            <table id="answerMatrix" class="table-bordered">
+            <table id="answerMatrix" style="display: none;" class="table-bordered">
 
             </table>
      
 </div>
-</center>
-     
+
+        <input type="button" onclick="checkGameAnswer()" value="Check My Answer"/>
+    </center>
         <script type="text/javascript" src="Soduko2.js" ></script>
     </body>
     
