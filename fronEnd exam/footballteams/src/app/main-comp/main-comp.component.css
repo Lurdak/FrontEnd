@@ -1,0 +1,43 @@
+.MainWindow{
+   text-align: center;
+   border: black 1px solid;
+   background-color: rgb(180, 177, 177);
+ 
+}
+.lblClass{
+    font-size: 32px;
+    color: black;
+}
+.inputTxt{
+    width: 400px;
+}
+#startBtn{
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+}
+.blueBtns{
+    background-color: blue;
+    border-radius: 10px;
+    color: black;
+}
+.blueBtnsWhiteColor{
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
+#centerBtn{
+    color: white;
+}
+.tableStyle{ 
+     width: 50%;
+     left: 25%;
+    text-align: center;
+    position: relative;
+    border-collapse: collapse;
+}
+.tableStyle td,.tableStyle th{
+  
+   
+    border: black 1px solid ;
+    text-align: center;
+}

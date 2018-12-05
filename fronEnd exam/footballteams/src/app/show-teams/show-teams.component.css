@@ -1,0 +1,15 @@
+ 
+  
+  .exchangeList{
+    border: black 1px solid;
+    border-radius: 5px;   
+    background-color: rgb(218, 217, 217);
+    text-align: left;
+    
+
+  }
+  /*
+  Copyright 2017-2018 Google Inc. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at http://angular.io/license
+  */

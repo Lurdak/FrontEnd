@@ -1,0 +1,19 @@
+<br> 
+<div *ngIf="serv.pageChose==1">
+ 
+ 
+ 
+    <div  *ngFor="let ex of exList"  
+    class="exchangeList">
+      
+        <span>#{{ex.getExchangeNum()}}</span><br>
+        <span>From {{ex.getFrom().getName()}} To {{ex.getTo().getName()}}</span><br>
+        <span>{{ex.getAmount()}} = {{ex.calcExchage()}}</span><br>
+            
+    </div>
+        
+        
+    
+ 
+</div>
+ 

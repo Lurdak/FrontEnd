@@ -1,0 +1,51 @@
+<div *ngIf="serv.pageChose==0 ||serv.pageChose==1" class="MainWindow">
+    <h1>Exchange</h1>
+    <label class="lblClass">From:  </label> 
+    <select [(ngModel)]="from">
+        <option *ngFor="let curr of currList.getCurrList()"  value={{curr.getName()}}>{{curr.getName()}}</option> 
+          
+       
+    </select>
+    <input [(ngModel)]="amount" (update)="enableKey()" />
+    <br>
+    <br>
+    <label class="lblClass">To:  <select  [(ngModel)]="to">
+        <option *ngFor="let curr of currList.getCurrList()"  value={{curr.getName()}}>{{curr.getName()}}</option> 
+ 
+    </select></label>
+    <div class="btnWindow">
+    
+    <input  id="startBtn"  type="button"  value="Start" (click)="calExchange()" />
+    <br>
+    <br>
+    <br>
+    <input class="blueBtns"  type="button" value="Update" (click)=goToUpdate()  />
+    <a href="http://www.facebook.com"><input   class="blueBtns"  id="centerBtn"  type="button" value="Share On FACEBOOK"  /></a>
+    <input   class="blueBtns"   type="button" value="View your exchange list" (click)="showList()" />
+    </div>
+    <div  *ngIf="serv.pageChose==1">
+        <br> 
+        <!-- using another componnet to show the list -->
+        <app-show-teams></app-show-teams>
+    </div>
+ 
+</div>
+<div class="MainWindow" *ngIf="serv.pageChose==2">
+        <h1>UPDATE</h1>
+ 
+        <table class="tableStyle">
+            <tr>
+                <th>TYPE</th>
+                <th>VALUE</th>
+            </tr>
+            <tr *ngFor="let curr of currList.getCurrList()">
+                <td>{{curr.getName()}}</td>
+                <td>{{curr.getPrice()}}</td>
+            </tr>
+        </table>
+        <h3  >Type <input [(ngModel)]="type"  /></h3> 
+ 
+        <h3>New Value <input [(ngModel)]="value"  /> </h3> 
+        <input type="button" class="blueBtnsWhiteColor" value="BACK" (click)="back()" />
+        <input type="button" class="blueBtnsWhiteColor" value="UPDATE" (click)="addUpdateType()" />
+</div>
